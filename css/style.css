@@ -1,0 +1,329 @@
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fixed-header li {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  margin: 0 5px;
+}
+
+.fixed-header a {
+  display: block;
+  line-height: 60px;
+  color: #444;
+  text-decoration: none;
+  padding: 0 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.fixed-header .active a {
+  background: #222;
+  color: #FFF;
+}
+
+.side-menu {
+  position: fixed;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  width: 22px;
+  height: 100%;
+  display: table;
+}
+
+.side-menu nav {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.side-menu li {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.side-menu a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.side-menu a:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.side-menu span {
+  display: block;
+  position: absolute;
+  right: 32px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate3d(30px, 0, 0);
+  -ms-transform: translate3d(30px, 0, 0);
+  -o-transform: translate3d(30px, 0, 0);
+  transform: translate3d(30px, 0, 0);
+}
+
+.side-menu .active a:after {
+  background: #FFF;
+}
+
+.side-menu .active span {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.lavalamp-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 100;
+}
+
+.lavalamp-menu nav,
+.lavalamp-menu li {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+
+.lavalamp-menu li {
+  margin: 0 15px;
+}
+
+.lavalamp-menu nav {
+  position: relative;
+}
+
+.lavalamp-menu .lavalamp {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background: #222;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.lavalamp-menu a {
+  display: block;
+  line-height: 50px;
+  color: #444;
+  text-decoration: none;
+  padding: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.lavalamp-menu a:hover {
+  opacity: 0.6;
+}
+
+section {
+  height: 1080px;
+  color: #FFF;
+  text-align: center;
+}
+
+section:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  width: 0;
+  height: 100%;
+}
+
+section .inner {
+  display: inline-block;
+  width: 100%;
+  zoom: 1;
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 3em;
+}
+
+/**
+* Project : simply-countdown
+* File : simplyCountdown.theme.default
+* Date : 27/06/2015
+* Author : Vincent Loy <vincent.loy1@gmail.com>
+*/
+.simply-countdown {
+  overflow: hidden;
+  display: table;
+  font-family: "Arial", sans-serif;
+}
+.simply-countdown > .simply-section {
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 15px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 175vw;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+.image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw; /* Use viewport width for image width */
+  height: 100vh; /* Use viewport height for image height */
+  object-fit: cover; /* Crop and zoom the image */
+  max-height: 175vw;
+}
+
+.simply-countdown {
+  /* The countdown */
+  margin-bottom: 2em;
+}
+
+.simply-countdown > .simply-section {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: rgba(118, 141, 191, 0.8);
+  margin: 0 4px;
+  max-height: 23vw;
+  max-width: 23vw;
+  border-radius: 50%;
+  position: relative;
+  animation: pulse 1s ease infinite;
+  flex-direction: column;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.simply-countdown > .simply-section > div {
+  /* countdown block inner div */
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  color: white;
+  /* amounts and words */
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 30px;
+  /* amounts */
+}
+
+.simply-countdown > .simply-section .simply-word {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 12px;
+  /* words */
+}
+
+.event-wrap {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  width: 100%;
+  float: left;
+  border-radius: 4px;
+}
+.event-wrap h3 {
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.event-wrap p, .event-wrap span {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+}
+.event-wrap i {
+  color: white;
+  font-size: 20px;
+}
+.event-wrap .event-col {
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#section-1, #section-3 {
+  background: rgb(118, 141, 191);
+  background: linear-gradient(180deg, #657fb7 0%, #99aacf 100%);
+}
+
+/*# sourceMappingURL=style.css.map */
