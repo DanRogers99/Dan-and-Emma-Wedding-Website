@@ -80,3 +80,8 @@ fabric.properties
 *.css.map
 *.sass.map
 *.scss.map
+
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
