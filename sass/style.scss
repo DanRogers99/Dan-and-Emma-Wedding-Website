@@ -110,9 +110,10 @@ $brand-white: #fff;
   }
 }
 
-#section-1, #section-3{
+#events, #gifts{
   background: rgb(118, 141, 191);
   background: linear-gradient(180deg, #657fb7 0%, #99aacf 100%);
+  padding: 7em 0;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, figure {
@@ -136,11 +137,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, figure {
   font-weight: 600;
 }
 
-#section-1,
-#section-3 {
-  padding: 7em 0;
-}
-
 .rsvpForm {
   color:black;
 }
@@ -149,4 +145,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, figure {
   + div button.btn {
     display: none;
   }
+}
+
+* {
+  scroll-padding-top: 75px !important;
 }
