@@ -1,138 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>MenuSpy</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
 
-<header id="main-header" class="lavalamp-menu">
-    <nav>
-        <ul>
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#section-1">Wedding Events</a></li>
-            <li><a href="#section-2">RSVP</a></li>
-            <li><a href="#section-3">Wedding Gifts</a></li>
-        </ul>
-        <div class="lavalamp"></div>
-    </nav>
-</header>
+    <header class="lavalamp-menu" id="main-header">
+        <nav>
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#section-1">Wedding Events</a></li>
+                <li><a href="#section-2">RSVP</a></li>
+                <li><a href="#section-3">Wedding Gifts</a></li>
+            </ul>
+            <div class="lavalamp"></div>
+        </nav>
+    </header>
 
-<main>
-    <section id="home" class="d-flex" style="height: fit-content !important;">
-        <div class="inner">
-            <div class="image-container">
-                <img src="images/P2403739.jpg">
-                <div class="" style=" position: absolute;    bottom: 15%;    width: 100%;">
-                    <div class="row g-0">
-                        <div class="text-center">
-                            <div class="d-flex flex-column align-items-center">
-                                <h1 style="color: white;text-shadow: 2px 2px 0 black;">Emma &amp; Daniel</h1>
-                                <h2 style="color: white;text-shadow: 2px 2px 0 black;">We Are Getting Married</h2>
-                                <div class="simply-countdown simply-countdown-one"></div>
+    <main>
+        <section class="d-flex" id="home" style="height: fit-content !important;">
+            <div class="inner">
+                <div class="image-container">
+                    <img src="images/P2403739.jpg">
+                    <div class="" style=" position: absolute;    bottom: 15%;    width: 100%;">
+                        <div class="row g-0">
+                            <div class="text-center">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h1 style="color: white;text-shadow: 2px 2px 0 black;">Emma &amp; Daniel</h1>
+                                    <h2 style="color: white;text-shadow: 2px 2px 0 black;">We Are Getting Married</h2>
+                                    <div class="simply-countdown simply-countdown-one"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <h1>Home</h1>
                 </div>
-                <h1>Home</h1>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="section-1">
-        <div class="p-4">
-            <div class="container">
-                <div class="row">
-                    <div class="text-center">
-                        <span>22nd June 2024</span>
-                        <h2>Wedding Events</h2>
-                    </div>
-                </div>
-                <div class="row">
+        <section id="section-1">
+            <div class="p-4">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 text-center">
-                            <div class="event-wrap animate-box">
-                                <h3>Wedding Service</h3>
-                                <div class="event-col">
-                                    <i class="icon-clock"></i>
-                                    <span>Guests to be sat by 11.45am</span>
-                                    <span>Bridal party entrance at noon</span>
-                                </div>
-                                <div class="event-col">
-                                    <i class="icon-map2"></i>
-                                    <span>St Lucia's Church</span>
-                                    <span>Upton Magna</span>
-                                    <span>Shrewsbury</span>
-                                    <span>SY4 4TZ</span>
-                                </div>
-                                <p>Parking will be available in the village hall car park and the adjacent
-                                    field.
-                                    Upton Magna Village Hall, Shrewsbury, SY4 4TZ.
-                                </p>
-                            </div>
+                        <div class="text-center">
+                            <span class="date">22nd June 2024</span>
+                            <h2 class="heading">Wedding Events</h2>
                         </div>
-                        <div class="col-md-6 col-sm-6 text-center">
-                            <div class="event-wrap animate-box">
-                                <h3>Reception</h3>
-                                <div class="event-col">
-                                    <i class="icon-clock"></i>
-                                    <span>Please see your invitation for the arrival time</span>
-                                    <span>Carriages at midnight</span>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="mt-4 col-sm-6 text-center">
+                                <div class="event-wrap animate-box">
+                                    <h3>Wedding Service</h3>
+                                    <div class="event-col">
+                                        <span class="material-icons">
+                                            schedule
+                                        </span>
+                                        <span>Guests to be sat by 11.45am</span>
+                                        <span>Bridal party entrance at noon</span>
+                                    </div>
+                                    <div class="event-col">
+                                        <span class="material-icons">
+                                            room
+                                        </span> <span>St Lucia's Church</span>
+                                        <span>Upton Magna</span>
+                                        <span>Shrewsbury</span>
+                                        <span>SY4 4TZ</span>
+                                    </div>
+                                    <p>Parking will be available in the village hall car park and the adjacent
+                                        field.
+                                        Upton Magna Village Hall, Shrewsbury, SY4 4TZ.
+                                    </p>
                                 </div>
-                                <div class="event-col">
-                                    <i class="icon-map2"></i>
-                                    <a href="https://goo.gl/maps/Jz92zs65tEjYBP3D8" target="_blank"
-                                       class="link">
-                                        <span>Davenport House</span>
-                                        <span>Worfield</span>
-                                        <span>Shropshire</span>
-                                        <span>WV15 5LE</span>
-                                    </a>
+                            </div>
+                            <div class="mt-4 col-sm-6 text-center">
+                                <div class="event-wrap animate-box">
+                                    <h3>Reception</h3>
+                                    <div class="event-col">
+                                        <span class="material-icons">
+                                            schedule
+                                        </span> <span>Please see your invitation for the arrival time</span>
+                                        <span>Carriages at midnight</span>
+                                    </div>
+                                    <div class="event-col">
+                                        <span class="material-icons">
+                                            room
+                                        </span> <a class="link" href="https://goo.gl/maps/Jz92zs65tEjYBP3D8"
+                                            target="_blank">
+                                            <span>Davenport House</span>
+                                            <span>Worfield</span>
+                                            <span>Shropshire</span>
+                                            <span>WV15 5LE</span>
+                                        </a>
+                                    </div>
+                                    <p>We are so excited to celebrate with you!
+                                    </p>
+                                    <br />
                                 </div>
-                                <p>We are so excited to celebrate with you!
-                                </p>
-                                <br/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="section-2" style="height: 1400px;">
-        <div class="p-5">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdF-swsUDlweBu4Ze8kQRonwl5lglefwfFsYdr4R3O1mX7edw/viewform?embedded=true"
-                    width="100%" height="1200px" frameborder="0" marginheight="0" marginwidth="0">Loading…
-            </iframe>
-        </div>
-    </section>
+        <section id="section-2">
+            <div class="container p-5 rsvpForm" id="ff-compose">
+                <script async defer
+                    src="https://formfacade.com/include/107255087608450834537/form/1FAIpQLSfOquhghBto6mKXRJNZN6FXUiAMKWvmWjVBAgo93L43Xl4G6A/bootstrap.js?div=ff-compose"></script>
+            </div>
+        </section>
 
-    <section id="section-3">
-        <div class="inner">
-            <div class="container">
-                <div class="row">
-                    <div class="text-center">
-                        <h2>Wedding Gifts</h2>
+        <section id="section-3">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            <h2 class="heading">Wedding Gifts</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="display-t">
-                        <div class="display-tc">
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 col-sm-6 text-center">
-                                    <div class="event-wrap">
-                                        <p>We are so looking forward to spending this special day with you, your
-                                            presence is everything we could wish for!
-                                            <br/><br/>
-                                            If you do wish to give a wedding present as well, we would welcome help
-                                            towards our honeymoon to Mexico, Riviera Maya.
-                                            Please see our <a href="https://patchworkit.com/">Patchwork</a> for details
-                                            if you would like to do this online.
-                                            Alternatively, cash or cheques would be very much appreciated.
-                                        </p>
+                    <div class="row">
+                        <div class="display-t">
+                            <div class="display-tc">
+                                <div class="row justify-content-center">
+                                    <div class="mt-4 col-sm-6 text-center">
+                                        <div class="event-wrap">
+                                            <p>We are so looking forward to spending this special day with you, your
+                                                presence is everything we could wish for!
+                                                <br /><br />
+                                                If you do wish to give a wedding present as well, we would welcome help
+                                                towards our honeymoon to Mexico, Riviera Maya.
+                                                Please see our <a href="https://patchworkit.com/">Patchwork</a> for
+                                                details
+                                                if you would like to do this online.
+                                                Alternatively, cash or cheques would be very much appreciated.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -140,35 +154,35 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-<script src="node_modules/simplycountdown.js/dist/simplyCountdown.min.js"></script>
-<script src="node_modules/menuspy/dist/menuspy.min.js"></script>
-<script>
-    var lavalampElm = document.querySelector('.lavalamp');
-    var positionLavalamp = function (activeElm) {
-        lavalampElm.style.width = activeElm.elm.offsetWidth + 'px';
-        lavalampElm.style.left = activeElm.elm.offsetLeft + 'px';
-    };
-    var elm = document.querySelector('#main-header');
-    var ms = new MenuSpy(elm, {
-        callback: positionLavalamp
-    });
+    <script src="node_modules/simplycountdown.js/dist/simplyCountdown.min.js"></script>
+    <script src="node_modules/menuspy/dist/menuspy.min.js"></script>
+    <script>
+        var lavalampElm = document.querySelector('.lavalamp');
+        var positionLavalamp = function (activeElm) {
+            lavalampElm.style.width = activeElm.elm.offsetWidth + 'px';
+            lavalampElm.style.left = activeElm.elm.offsetLeft + 'px';
+        };
+        var elm = document.querySelector('#main-header');
+        var ms = new MenuSpy(elm, {
+            callback: positionLavalamp
+        });
 
-    positionLavalamp({elm: elm.querySelector('li.active')});
+        positionLavalamp({ elm: elm.querySelector('li.active') });
 
-    const d = new Date(2024, 6, 22, 11, 0);
+        const d = new Date(2024, 6, 22, 11, 0);
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth(),
-        day: d.getDate()
-    });
+        // default example
+        simplyCountdown('.simply-countdown-one', {
+            year: d.getFullYear(),
+            month: d.getMonth(),
+            day: d.getDate()
+        });
 
-</script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
