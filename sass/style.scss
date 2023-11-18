@@ -1,5 +1,6 @@
 @import "navbar";
 @import "../node_modules/simplycountdown.js/css/scss/simplyCountdown.theme.default.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 $brand-primary: #768dbf !default;
 $brand-white: #fff;
@@ -124,6 +125,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, figure {
 .heading {
   font-family: "Pinyon Script", Arial, serif;
   font-size: 60px;
+  color:white;
 }
 
 .date {
