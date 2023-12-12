@@ -184,3 +184,31 @@ h1, h2 {
   font-weight: normal;
   font-size: 3em;
 }
+
+button.btn {
+  background-color: rgba(118, 141, 191, 50%);
+  border-color: white;
+  color: white;
+  flex: 1 1 1px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: rgba(118, 141, 191, 50%);
+    border-color: white;
+    color: white;
+  }
+
+  &:hover {
+    background-color: rgba(118, 141, 191, 75%);
+  }
+
+
+  &.darken {
+    background-color: rgba(118, 141, 191, 75%);
+
+    &:hover {
+      background-color: rgba(118, 141, 191, 90%);
+    }
+  }
+}
