@@ -186,6 +186,27 @@ h1, .h1, h2, .h2 {
   font-size: 3em;
 }
 
+button.btn {
+  background-color: rgba(118, 141, 191, 0.5);
+  border-color: white;
+  color: white;
+  flex: 1 1 1px;
+}
+button.btn:hover, button.btn:active, button.btn:focus {
+  background-color: rgba(118, 141, 191, 0.5);
+  border-color: white;
+  color: white;
+}
+button.btn:hover {
+  background-color: rgba(118, 141, 191, 0.75);
+}
+button.btn.darken {
+  background-color: rgba(118, 141, 191, 0.75);
+}
+button.btn.darken:hover {
+  background-color: rgba(118, 141, 191, 0.9);
+}
+
 /**
 * Project : simply-countdown
 * File : simplyCountdown.theme.default
@@ -12154,6 +12175,9 @@ textarea.form-control-lg {
   width: 100%;
   float: left;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .event-wrap h3, .event-wrap .h3 {
   font-size: 20px;
@@ -12208,9 +12232,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, figure {
 .rsvpForm {
   color: black;
 }
-
-.ff-success + div button.btn {
+.rsvpForm .ff-section .ff-title {
+  font-family: "Pinyon Script", Arial, serif;
+  font-size: 3em !important;
+}
+.rsvpForm .ff-section .ff-qs-html-text i {
+  font-weight: lighter;
+}
+.rsvpForm .ff-section .ff-success + div button.btn {
   display: none;
+}
+.rsvpForm .ff-form .ff-form-check-other input[type=text] {
+  width: calc(100% - 25px);
 }
 
 * {
@@ -12219,6 +12252,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, figure {
 
 .simply-countdown > .simply-section {
   animation: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: initial;
+}
+
+button.btn.darken {
+  background-color: rgba(118, 141, 191, 0.75);
+}
+
+.taxi-name,
+p.phone-number {
+  color: black;
+}
+
+p.phone-number {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
