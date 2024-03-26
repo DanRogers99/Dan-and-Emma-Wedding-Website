@@ -12202,11 +12202,18 @@ textarea.form-control-lg {
   margin-bottom: 30px;
 }
 
-#events, #gifts {
+#events {
   background: rgb(118, 141, 191);
   background: linear-gradient(180deg, #657fb7 0%, #99aacf 100%);
   padding: 7em 0;
 }
+
+#gifts {
+  padding: 7em 0;
+  color: black;
+
+}
+
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, figure {
   color: #000;
