@@ -41,7 +41,9 @@ jobs:
         uses: gha-utilities/sass-build@v0.6.1
         with:
            source: ./scss/style.scss
-           destination: ./css/main.css 
+           destination: ./css/style.css
+      - name: Add build ID to CSS link
+        run: sed -i 's/css\/style\.css?v=[0-9]*/css\/style.css?v=${{ github.run_number }}/g' index.html
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
