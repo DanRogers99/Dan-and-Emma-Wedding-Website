@@ -38,10 +38,9 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.6.1
-        with:
-           source: ./scss/style.scss
-           destination: ./css/style.css
+        run: |
+          mkdir -p ./css
+          npx sass ./scss/style.scss ./css/style.css
       - name: Add build ID to CSS link
         run: sed -i 's/css\/style\.css?v=[0-9]*/css\/style.css?v=${{ github.run_number }}/g' index.html
       - name: Setup Pages
