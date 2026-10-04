@@ -18,6 +18,8 @@ ul, li {
 .fixed-header li {
   display: inline-block;
   vertical-align: top;
+  zoom: 1;
+  *display: inline;
   margin: 0 5px;
 }
 
@@ -120,6 +122,8 @@ ul, li {
 .lavalamp-menu li {
   display: inline-block;
   vertical-align: top;
+  zoom: 1;
+  *display: inline;
 }
 
 .lavalamp-menu li {
@@ -163,6 +167,8 @@ section:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
+  zoom: 1;
+  *display: inline;
   width: 0;
   height: 100%;
 }
