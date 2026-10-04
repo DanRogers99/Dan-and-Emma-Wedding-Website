@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=.75" name="viewport">
-    <meta name="description" content="Emma & Daniel's wedding website with event details, accommodation information, and gift list.">
 
-    <title>Emma & Daniel | Wedding Website</title>
+    <title>Emma & Daniel</title>
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Pinyon+Script&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -26,7 +27,7 @@
 <body>
 
 <header class="lavalamp-menu" id="main-header">
-    <nav aria-label="Main" role="navigation">
+    <nav>
         <ul>
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#events">Wedding Events</a></li>
@@ -40,12 +41,7 @@
     <section class="d-flex" id="home" style="height: fit-content !important;">
         <div class="inner">
             <div class="image-container">
-                <img src="images/P2403739.jpg"
-                     alt="Emma and Daniel together outside on their wedding day"
-                     width="1600" height="1200"
-                     decoding="async"
-                     fetchpriority="high"
-                     loading="eager">
+                <img src="images/P2403739.jpg">
                 <div class="" style=" position: absolute;    bottom: 15%;    width: 100%;">
                     <div class="row g-0">
                         <div class="text-center">
@@ -78,12 +74,16 @@
                                 <h3>Wedding Service</h3>
                                 <div>
                                     <div class="event-col">
-                                        <img class="event-icon" src="./icons/clock.svg" alt="" aria-hidden="true" width="20" height="20">
+                                        <span class="material-icons">
+                                            schedule
+                                        </span>
                                         <span>Guests to be sat by 11.45am</span>
                                         <span>Bridal party entrance at noon</span>
                                     </div>
                                     <div class="event-col">
-                                        <img class="event-icon" src="./icons/pin.svg" alt="" aria-hidden="true" width="20" height="20">
+                                        <span class="material-icons">
+                                            room
+                                        </span>
                                         <a class="link" href="https://maps.app.goo.gl/AcPK8xaobJzkhy2X7"
                                            target="_blank">
                                             <span>St Lucia's Church</span>
@@ -105,14 +105,16 @@
                                 <h3>Reception</h3>
                                 <div>
                                     <div class="event-col">
-                                        <img class="event-icon" src="./icons/clock.svg" alt="" aria-hidden="true" width="20" height="20">
-                                        <span>Please see your invitation for the arrival time</span>
+                                        <span class="material-icons">
+                                            schedule
+                                        </span> <span>Please see your invitation for the arrival time</span>
                                         <br/>
                                         <span>Carriages at midnight</span>
                                     </div>
                                     <div class="event-col">
-                                        <img class="event-icon" src="./icons/pin.svg" alt="" aria-hidden="true" width="20" height="20">
-                                        <a class="link" href="https://maps.app.goo.gl/gAF164jwEnyqQ9Co8"
+                                        <span class="material-icons">
+                                            room
+                                        </span> <a class="link" href="https://maps.app.goo.gl/gAF164jwEnyqQ9Co8"
                                                    target="_blank">
                                         <span>Davenport House</span>
                                         <span>Worfield</span>

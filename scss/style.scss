@@ -87,14 +87,6 @@ $font-fancy: "Pinyon Script", Arial, serif;
   /* words */
 }
 
-.event-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin: 0 auto 8px;
-  filter: brightness(0) invert(1);
-}
-
 .event-wrap {
   border: 2px solid rgba($brand-white, .5);
   background: rgba($brand-white, .1);
